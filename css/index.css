@@ -774,6 +774,10 @@ bar를 가져와주면 됨 둘다 span임  */
     line-height: 25px;
 }
 
+.br-hide{
+    display: none;
+}
+
 .title-five{
     width: 413px;
     height: 121px;

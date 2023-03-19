@@ -1,0 +1,1559 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face{
+    font-family:'cooper-black';
+    font-style:normal;
+    font-weight:400;
+    src:local('Cooper Black'),url(https://fonts.cdnfonts.com/s/14988/COOPBL.woff) format('woff')
+} */
+
+@font-face {
+    font-family: 'cooper-black-regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cooper Black Regular'), url('/font/COOPBL.woff') format('woff');
+}
+
+
+main{
+    /* padding: 0 32px; */
+    padding-top: 100vh;
+}
+
+#title{
+    background-image: url(../img/star.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1{
+    /* font-family:'cooper-black'; */
+    font-family: 'cooper-black-regular', sans-serif;
+    font-size: 100px;
+    color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(7em) scale(0.5);
+    text-shadow: 23px 18px 7px rgba(0, 0, 0, 0.25);
+    animation: text-move 2s;
+    animation-fill-mode: both;
+
+}
+
+.cloud-one{
+    position: absolute;
+    width: 60%;
+    /* bottom: 17em; */
+    /* left: 400px; */
+    right: 0;
+    animation: cloud-one 2s;
+    animation-fill-mode: both;
+
+}
+
+.cloud-two{
+    position: absolute;
+    /* width: 700px; */
+    width: 60%;
+    left: 170px;
+    bottom: 100px;
+    /* bottom: 17em; */
+    transform: translateX(1em);
+    animation: cloud-two 2s;
+    animation-fill-mode: both;
+
+}
+
+.mountain{
+    /* top: 60%; */
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    transform: scale(1.2);
+    bottom: 0;
+    animation: mountain 2s;
+    animation-fill-mode: both;
+
+    
+}
+
+.moon-one{
+    position: absolute;
+    width: 15%;
+    /* height: 330px; */
+    bottom: 30em;
+    left: 10em;
+    animation: moon 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes moon {
+    to{
+        transform: translateY(-4em);
+    }
+}
+
+@keyframes cloud-two {
+    to{
+        transform: translateX(-550px);
+    }
+}
+
+@keyframes cloud-one {
+    to{
+        transform: translateX(550px);
+    }
+}
+
+@keyframes mountain {
+    to{
+        transform: scale(1) translateY(30%);
+    }
+}
+
+@keyframes text-move {
+    to{
+        transform: translateY(2.5em) scale(1);
+    }
+}
+
+#intro{
+    background-color: #061420;
+    border-radius: 150px 150px 0 0;
+}
+
+.intro-con{
+    padding: 240px 0;
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+}
+
+.me{
+    position: relative;
+    width: 50%;
+}
+
+.me-img{
+    /* z-index: 2; */
+    position: relative;
+    /* bottom: -150px; */
+}
+
+.me-img img{
+    margin: 0 auto;
+    /* width: 420px;
+    height: 603px; */
+    width: 65%;
+    border: 2px solid #E6E6E6;
+    border-radius: 240px;
+}
+
+.star-con1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.star-con1 figure{
+    position: absolute;
+}
+
+
+.intro-star1{
+    /* width: 20px;
+    height: 40px; */
+    width: 3%;
+    left: 13%;
+    top: 15%;
+    animation: glitter 3s linear infinite;
+    /* animation-delay: 1s; */
+}
+
+.intro-star2{
+    /* width: 20px; */
+    /* height: 40px; */
+    width: 4%;
+    /* left: 86%; */
+    right: 9%;
+    bottom: 20%;
+    animation: glitter 2.5s linear infinite;
+
+}
+
+.intro-star3{
+    /* width: 20px; */
+    /* height: 40px; */
+    width: 4%;
+    left: 18%;
+    top: 5%;
+    animation: glitter 3s linear infinite;
+    animation-delay: 1s;
+
+}
+
+.intro-star4{
+    /* width: 20px;
+    height: 40px; */
+    width: 5%;
+    left: 15%;
+    bottom: 7%;
+    animation: glitter 2.5s linear infinite;
+
+}
+
+.intro-star5{
+    /* width: 20px;
+    height: 40px; */
+    width: 4%;
+    /* left: 78%; */
+    right: 15%;
+    top: 10%;
+    animation: glitter 2.5s linear infinite;
+
+}
+
+.intro-star6{
+    /* width: 20px;
+    height: 40px; */
+    width: 3%;
+    /* left: 82%; */
+    right: 15%;
+    bottom: 13%;
+    animation: glitter 3s linear infinite;
+    animation-delay: 1s;
+
+}
+
+@keyframes glitter{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    25%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    75%{
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+.circle-group{
+    /* width: 750px;
+    height: 239px; */
+    position: absolute;
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.introduce{
+    width: 50%;
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #E6E6E6;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.introduce-text:nth-of-type(1){
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.introduce-text:nth-of-type(2){
+    padding-top: 20px;
+    line-height: 23px;
+}
+
+.introduce-text:nth-of-type(3){
+    padding-top: 40px;
+    line-height: 23px;
+}
+
+.dawn1{
+    bottom: -10px;
+    width: 50px;
+    padding-top: 90px;
+}
+
+/* ======================
+이부분 질문 h2를 inline으로 바꿔야 커서 생기는 하는 이유ㅜㅜ */
+/* 그리고 왜 미묘하게 올라가는지? */
+.typ-wrapper{
+    height: 100px;
+}
+
+.typing{
+    display: inline;
+    font-size: 64px;
+    font-family: 'cooper-black-regular', sans-serif;
+}
+
+.intro-deco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.small-circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #E6E6E6;
+    /* right: 3px; */
+    /* bottom: 18%; */
+    
+}
+
+.line-1{
+    width: 1px;
+    height: 530px;
+    /* right: 10px;
+    top: 230px; */
+}
+
+#resume{
+    background-color: #1C3044;
+}
+
+.tools{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px,1px,1px,1px);
+    overflow: hidden;
+}
+
+.title-circle{
+    width:280px;
+    height:100px;
+    border-radius:50% / 50%;
+    border: 1px solid #E6E6E6;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.title-one{
+    width:305px;
+    height:92px;
+}
+
+.small-title{
+    font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif;
+    font-size: 64px;
+    color: #E6E6E6;
+    text-align: center;
+    /* line-height: 150px; */
+}
+
+.icon-wrapper figure{
+    width: 71px;
+    height: 71px;
+}
+
+.tools-container{
+    padding: 100px 10px 200px 10px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 70px;
+    flex-wrap: wrap;
+}
+
+.icon-wrapper ul{
+    position: relative;
+    width: 500px;   
+}
+
+.icon-wrapper li{
+    background-color: #E6E6E6;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.bar{
+    position: absolute;
+    border-radius: 20px;
+    background-color: #80B0D1;
+    height: 40px;
+    animation-fill-mode: both;
+}
+
+.icon-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.html-progressbar{
+    width: 0%;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    /* animation-play-state: paused; */
+}
+
+.css-progressbar{
+    width: 0%;
+
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    
+}
+
+.js-progressbar{
+    width: 0%;
+    /* animation: js-progressbar 2s ease-out; */
+
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.fig-progressbar{
+    width: 0%;
+    /* animation: fig-progressbar 2s ease-out; */
+
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.ps-progressbar{
+    width: 0%;
+    /* animation: ps-progressbar 2s ease-out; */
+
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.ai-progressbar{
+    width: 0%;
+    /* animation: ai-progressbar 2s ease-out; */
+
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.ae-progressbar{
+    width: 0%;
+    /* animation: ae-progressbar 2s ease-out; */
+
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.html-progressbar.play-animation{
+    animation-name: html-progressbar;
+}
+
+.css-progressbar.play-animation{
+    animation-name: css-progressbar;
+}
+
+.js-progressbar.play-animation{
+    animation-name:  js-progressbar;
+}
+
+.fig-progressbar.play-animation{
+    animation-name: fig-progressbar;
+}
+
+.ps-progressbar.play-animation{
+    animation-name: ps-progressbar;
+}
+
+.ai-progressbar.play-animation{
+    animation-name: ai-progressbar;
+}
+
+.ae-progressbar.play-animation{
+    animation-name: ae-progressbar;
+}
+
+@keyframes html-progressbar {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+
+@keyframes css-progressbar {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+
+@keyframes js-progressbar {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 35%;
+    }
+}
+
+@keyframes fig-progressbar {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+
+@keyframes ps-progressbar {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+
+@keyframes ai-progressbar {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+
+@keyframes ae-progressbar {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 30%;
+    }
+}
+
+/* 애니메이션 자바스크립트로 실행하고 싶은데 애니메이션 7개라서ㅜㅜ 어떤식으로?
+bar를 가져와주면 됨 둘다 span임  */
+/* 메인 사진들 로드하면 한번만 움직이도록 어떻게? */
+
+.soft-skills{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.title-two{
+    width: 428px;
+    height: 112px;
+}
+
+.ss-wrapper{
+    max-width: 1096px;
+    margin: 0 auto;
+    padding: 0 178px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* column-gap: 300px; */
+    row-gap: 100px;
+    
+}
+
+.img-wrap svg{
+    /* width: 120px; */
+    /* height: 114px; */
+    width: 100%;
+    height: 100%;
+}
+
+.img-wrap{
+    padding: 32px 32px;
+    width: 184px;
+    height: 184px;
+}
+
+.ss-one,.ss-two,.ss-three,.ss-four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #E6E6E6;
+    position: relative;
+    flex-basis: calc(40% - 16px);
+    opacity: 0;
+}
+
+.ss-explanation{
+    padding-left: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #E6E6E6;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 16px;
+    color: #E6E6E6;
+}
+
+.ss-explanation p{
+    padding-bottom: 10px;
+}
+
+.rectangle{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    border: 1px solid #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif;
+    color: #E6E6E6;
+}
+
+.svg-move{
+    animation: svg-move 2s alternate infinite ;
+}
+
+.svg-move2{
+    animation: svg-move 2s alternate-reverse infinite ;
+}
+
+.svg-move3{
+    animation: svg-move2 2s alternate infinite;
+}
+
+.svg-move4{
+    animation: svg-move3 2s alternate infinite ;
+}
+
+.svg-move5{
+    animation: svg-move4 3s alternate infinite ;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.svg-move6{
+    animation: svg-move5 1s alternate infinite ;
+    
+}
+
+
+@keyframes svg-move {
+    to{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes svg-move2 {
+    to{
+        transform: scale(1.1) translateY(-10px);
+    }
+}
+
+@keyframes svg-move3 {
+    to{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes svg-move4 {
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* 제자리에서 도는거랑 제자리에서 커지는거 어떻게? */
+
+@keyframes svg-move5 {
+    to{
+        transform: scale(1.1) translate(-10px,-10px);
+    }
+}
+
+
+
+.title-three{
+    width: 380px;
+    height: 116px;
+}
+
+.interest-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 874px;
+    margin: 0 auto;
+    padding: 100px 0 200px;
+}
+
+.interest-icon figure{
+    width: 167px;
+}
+
+.interest-icon p{
+    font-size: 20px;
+    color: #E6E6E6;
+    font-family: 'GangwonEdu_OTFBoldA';
+    text-align: center;
+    padding-top: 48px;
+}
+
+.title-four{
+    width: 322px;
+    height: 108px;
+}
+
+.ability-wrapper{
+    max-width: 1320px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.ability-wrapper ul{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    width: 515px;
+    margin: 0 auto;
+    list-style: disc;
+}
+
+.ability-wrapper li{
+    font-size: 20px;
+    color: #e6e6e6;
+    font-family: 'GangwonEdu_OTFBoldA';
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+.title-five{
+    width: 413px;
+    height: 121px;
+}
+
+.slider{
+    position: relative;
+}
+
+.slide-wrapper{
+    margin: 0 auto;
+    width: 800px;
+    height: 450px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    
+}
+
+.slide-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide-container::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid #e6e6e6;
+    border-radius: 300px;
+    width: calc(100% + 28px);
+    height: calc(100% + 28px);
+    /* width: 832px; */
+    /* height: 482px; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+
+.star-con figure{
+    position: absolute;
+}
+
+.star-con{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.star1{
+    width: 21px;
+    right: 40px;
+    bottom: 0;
+    animation: glitter 3s linear infinite;
+
+}
+
+.star2{
+    width: 42px;
+    left: 10px;
+    top: -10px;
+    animation: glitter 2.5s linear infinite;
+
+}
+
+.star3{
+    width: 21px;
+    left: -10px;
+    top: 60px;
+    animation: glitter 2s linear infinite;
+
+
+}
+
+.star4{
+    width: 90px;
+    bottom: 20px;
+    right: -50px;
+    animation: planet 2s linear infinite;
+
+}
+
+@keyframes planet{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
+
+.buttons{
+    display: flex;
+    width: calc(100% + 240px);
+    /* padding-left: 60px; */
+    /* margin: 0 auto; */
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.arrow img{
+    width: 104px;
+}
+
+.slide-contents{
+    display: flex;
+    border: 2px solid #F7F6F6;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 225px;
+    overflow: hidden;
+    position: relative;
+    will-change: transform;
+    /* -webkit-mask-image:-webkit-radial-gradient(white,black) */
+}
+
+.pofol{
+    position: absolute;
+    opacity: 0;
+    /* 자바할때 opacity 0 기본으로 해주고! 지금은 헷갈리니까 지워주기 */
+}
+
+.pofol img{
+    width: 800px;
+    height: 450px;
+}
+
+.black{
+    opacity: 0;
+    position: absolute;
+    background: rgba(14, 29, 43, 0.8);
+    width: 800px;
+    height: 450px;
+    border-radius: 225px;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #e6e6e6;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.pofol:hover .black{
+    opacity: 1;
+}
+
+
+.black p{
+    padding-bottom: 20px;
+}
+
+.a-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.black a{
+    font-size: 20px;
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #e6e6e6;   
+}
+
+.only-mobile{
+    display: none;
+}
+
+.pofol-content{
+    font-size: 20px;
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #e6e6e6;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    opacity: 0;
+}
+
+.pc-hide a{
+    font-size: 20px;
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #e6e6e6;   
+}
+
+/* 구글에 디졸브 캐러셀 */
+
+.pf-deco{
+    position: relative;
+}
+
+.pf-line{
+    width: 90%;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-bottom: 100px;
+}
+
+.pf-circle{
+    position: absolute;
+    bottom: 90px;
+    right: 35px;
+}
+
+.modal{
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: rgba(11, 11, 11, 0.8);
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 3;
+}
+
+.modal-hidden{
+    display: none;
+}
+
+.modal-wrapper{
+    margin: 100px;
+    position: relative;
+}
+
+.modal-but{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    /* border: none; */
+    /* color: rgb(58, 56, 56); */
+    /* border: 1px solid #e6e6e6; */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e6e6e6d3;
+    font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -70px;
+    border-radius:50% / 50%;
+    letter-spacing: 0.09em;
+}
+
+.modal-but:after {
+    border-radius:50% / 50%;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* direction: rtl; */
+    z-index: -1;
+    box-shadow:
+    -1px -1px 2px 0px #fff9,
+    -1px -1px 2px 0px #fff9,
+    1px 1px 3px 0px #0002,
+    1px 1px 2px 0px #0001;
+    transition: all 0.3s ease-in;
+}
+
+.modal-but:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.btn-16:active {
+    top: 2px;
+}
+
+.modal-but:hover {
+    color: #e6e6e6;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.modal-but img{
+    width: 40px;
+    height: 40px;
+}
+
+.modal figure{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  
+}
+
+footer{
+    background-color: #061420;
+    font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif;
+    color: #E6E6E6;
+    text-align: center;
+    position: relative;
+}
+
+.e-mail{
+    padding-top: 100px;
+}
+
+.contact-wrapper{
+    position: relative;
+    z-index: 1;
+}
+
+.contact-wrapper div{
+    display: flex;
+    /* justify-content: center; */
+    width: 400px;
+    margin: 0 auto;
+    font-size: 24px;
+    padding-bottom: 36px;
+}
+
+.contact-wrapper div p{
+    padding-left: 20px;
+}
+
+.contact-wrapper div a{
+    padding-left: 20px;
+    color: #e6e6e6;
+}
+
+h3{
+    font-size: 100px;
+    padding-top: 150px;
+}
+
+.thanks{
+    font-family: 'GangwonEdu_OTFBoldA';
+    padding-bottom: 200px;
+    z-index: 1;
+    position: relative;
+    line-height: 25px;
+    padding-top: 200px;
+}
+
+
+.img-con figure{
+    position: absolute;
+}
+
+.footer-moon{
+    width: 100px;
+    left: 17%;
+    bottom: 71%;
+}
+
+.ellipse{
+    width: 50em;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.star-back{
+    width: 800px;
+    right: 0;
+    bottom: 0;
+    /* z-index: 0; */
+}
+
+.line-2{
+    width: calc(100vw - 17px);
+    bottom: 80px;
+}
+
+
+/* 1240 905 599 */
+/* 1068 */
+
+@media screen and (max-width: 1240px) {
+    h1{
+        font-size: 80px;
+    }
+
+    .cloud-one{
+        bottom: 350px;
+    }
+
+    @keyframes moon {
+        to{
+            transform: translateY(-50%);
+        }
+    }
+
+    @keyframes mountain {
+        to{
+            transform: scale(1) translateY(35%);
+        }
+    }
+
+    @keyframes text-move {
+        to{
+            transform: translateY(250%) scale(1);
+        }
+    }
+
+    @keyframes cloud-two {
+        to{
+            transform: translateX(-300px);
+        }
+    }
+    
+    @keyframes cloud-one {
+        to{
+            transform: translateX(200px);
+        }
+    }
+
+    .intro-con{
+        padding: 100px 0;
+        flex-direction: column;
+        max-width: 770px;
+        gap: 50px;
+    }
+
+    .me{
+        width: 100%;
+        /* padding-top: 100px; */
+    }
+
+    .me-img img {
+        width: 40%;
+    }
+
+    .circle-group {
+        width: 70%;
+    }
+
+    .introduce{
+        width: 100%;
+    }
+
+    .br-hide{
+        display: none;
+    }
+
+    .tools{
+        max-width: 770px;
+    }
+
+    .tools-container{
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    .soft-skills{
+        max-width: 770px;
+    }
+
+    .ss-wrapper{
+        max-width: 770px;
+        padding: 100px 0 200px 0;
+    }
+
+    .interest-icon{
+        width: 770px;
+    }
+
+    .slide-wrapper{
+        width: 600px;
+        height: 345px;
+        padding-bottom: 250px;
+    }
+
+    .black{
+        width: 600px;
+        height: 345px;
+        display: none;
+    }
+
+    .pofol figure img{
+        width: 600px;
+        height: 345px;
+        
+    }
+
+    .buttons{
+        width: calc(100% + 200px);
+    }
+
+    .arrow img{
+        width: 77px;
+    }
+
+    .only-mobile{
+        display: block;
+        position: relative;
+        
+    }
+
+    .pofol-content{
+        position: absolute;
+        top: 0;
+        top: -200px;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .pofol-content a{
+        font-size: 20px;
+        font-family: 'GangwonEdu_OTFBoldA';
+        color: #e6e6e6;   
+    }
+
+    .pofol-content .a-con{
+        padding-top: 20px;
+        /* font-size: ; */
+    }
+
+    .star-con {
+        width: 106%;
+        height: 111%;
+        left: -25px;
+        top: -15px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    h1{
+        font-size: 50px;
+        transform: translateY(500%) scale(0.5);
+
+    }
+
+    .moon-one{
+        width: 20%;
+        left: 3em;
+        bottom: 66%;
+    }
+
+    .cloud-one{
+        width: 80%;
+        left: 100px;
+        bottom: 400px;
+    }
+
+    .cloud-two{
+        bottom: 200px;
+        left: -50px;
+        width: 80%;
+    }
+
+    @keyframes moon {
+        to{
+            transform: translateY(-30%);
+        }
+    }
+
+    @keyframes mountain {
+        to{
+            transform: scale(2) translateY(-10%);
+            /* translateY 퍼센트로 주기 */
+        }
+    }
+
+    @keyframes cloud-two {
+        to{
+            transform: translateX(-100px);
+        }
+    }
+
+    @keyframes cloud-one {
+        to{
+            transform: translateX(200px);
+        }
+    }
+
+    @keyframes text-move {
+        to{
+            transform: translateY(250%);
+            font-size: 50px;
+
+        }
+    }    
+
+    .intro-con{
+        max-width: 328px;
+    }
+
+    .me{
+        width: 90%;
+    }
+
+    .me-img img{
+        width: 70%;
+    }
+
+    .circle-group {
+        width: 110%;
+    }
+
+    .introduce{
+        align-items: flex-start;
+        font-size: 15px;
+    }
+
+    .br-hide{
+        display: block;
+    }
+
+    .dawn1{
+        padding-top: 30px;
+    }
+
+    .typing{
+        font-size: 35px;
+    }
+
+    .tools{
+        max-width: 328px;
+
+    }
+
+    .title-one{
+        width: 250px;
+        height: 70px;
+    }
+
+    .small-title{
+        font-size: 50px;
+    }
+
+    .tools-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-wrapper{
+        max-width: 328px;
+        gap: 10px;
+    }
+
+    .icon-wrapper ul {
+        width: 230px;
+    }
+
+    .title-two {
+        width: 303px;
+        height: 99px;
+    }
+
+    .ss-wrapper {
+        max-width: 328px;
+    }
+
+    .ss-one, .ss-two, .ss-three, .ss-four {
+        display: flex;
+        align-items: center;
+        flex-basis: 100%;
+        width: 380px;
+    }
+
+    .title-three {
+        width: 287px;
+        height: 91px;
+    }
+
+    .interest-icon {
+        width: 328px;
+    }
+
+    .interest-icon figure {
+        width: 80px;
+    }
+
+    .title-four {
+        width: 237px;
+        height: 95px;
+    }
+    
+    .ability-wrapper ul {
+        width: 328px;
+    }
+
+    .title-five {
+        width: 289px;
+        height: 99px;
+    }
+
+    .slide-wrapper{
+        width: 200px;
+        height: 450px;
+        padding-bottom: 300px;
+    }
+
+    .star-con {
+        width: 129%;
+        height: 121%;
+        left: -46px;
+        top: -33px;
+    }
+
+    .arrow img {
+        width: 40px;
+    }
+
+    .buttons{
+        width: calc(100% + 100px);
+    }
+
+    .pf-two figure img {
+        width: 800px;
+        height: 450px;
+        transform: translateX(-12%);
+    }
+
+    .pf-one figure img {
+        width: 800px;
+        height: 450px;
+        transform: translateX(-49%);
+    }
+
+    .black{
+        width: 200px;
+        height: 450px;
+        font-size: 16px;
+    }
+
+    .pofol-content{
+        width: 328px;
+    }
+
+    .mo-hide{
+        display: none;
+    }
+
+    .pf-deco{
+        padding-top: 60px;
+    }
+
+    .contact-wrapper h3{
+        font-size: 80px;
+    }
+
+    .contact-wrapper div {
+        width: 328px;
+        font-size: 20px;
+    }
+
+    .contact-wrapper div p{
+        padding-left: 0;
+    }
+
+    .e-mail {
+        padding-top: 50px;
+    }
+
+    .ellipse{
+        width: calc(100vw - 17px);   
+     }
+
+    .thanks p{
+        transform: translateY(120px);
+
+    }
+
+    
+
+}

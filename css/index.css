@@ -12,13 +12,19 @@
     src:local('Cooper Black'),url(https://fonts.cdnfonts.com/s/14988/COOPBL.woff) format('woff')
 } */
 
-@font-face {
+/* @font-face {
     font-family: 'cooper-black-regular';
     font-style: normal;
     font-weight: normal;
     src: local('Cooper Black Regular'), url('/font/COOPBL.woff') format('woff');
-}
+} */
 
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 main{
     /* padding: 0 32px; */
@@ -42,7 +48,8 @@ main{
 
 h1{
     /* font-family:'cooper-black'; */
-    font-family: 'cooper-black-regular', sans-serif;
+    /* font-family: 'cooper-black-regular', sans-serif; */
+    font-family: 'LOTTERIACHAB';
     font-size: 100px;
     color: #f6f6f6;
     display: flex;
@@ -324,7 +331,8 @@ h1{
 .typing{
     display: inline;
     font-size: 64px;
-    font-family: 'cooper-black-regular', sans-serif;
+    /* font-family: 'cooper-black-regular', sans-serif; */
+    font-family: 'LOTTERIACHAB';
 }
 
 .intro-deco{
@@ -387,7 +395,8 @@ h1{
 }
 
 .small-title{
-    font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif;
+    /* font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif; */
+    font-family: 'LOTTERIACHAB';
     font-size: 64px;
     color: #E6E6E6;
     text-align: center;
@@ -656,7 +665,8 @@ bar를 가져와주면 됨 둘다 span임  */
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif;
+    /* font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif; */
+    font-family: 'LOTTERIACHAB';
     color: #E6E6E6;
 }
 
@@ -1030,7 +1040,8 @@ bar를 가져와주면 됨 둘다 span임  */
     border: none;
     background-color: rgba(255, 255, 255, 0.1);
     color: #e6e6e6d3;
-    font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif;
+    /* font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif; */
+    font-family: 'LOTTERIACHAB';
     font-size: 20px;
     position: absolute;
     left: 50%;
@@ -1088,7 +1099,8 @@ bar를 가져와주면 됨 둘다 span임  */
 
 footer{
     background-color: #061420;
-    font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif;
+    /* font-family: 'cooper-black-regular','Cooper Black Regular', sans-serif; */
+    font-family: 'LOTTERIACHAB';
     color: #E6E6E6;
     text-align: center;
     position: relative;
